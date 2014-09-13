@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emtest1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/emtest1.css">
+  </head>
+  <body>
+    <script>
+      window.Emtest1ENV = {{ENV}};
+      window.EmberENV = window.Emtest1ENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/emtest1.js"></script>
+    <script>
+      window.Emtest1 = require('emtest1/app')['default'].create(Emtest1ENV.APP);
+    </script>
+  </body>
+</html>
